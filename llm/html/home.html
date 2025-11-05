@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title></title>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="../assets/css/default.css">
+  <link rel="canonical" href="">
+</head>
+<body>
+  <!-- WRAP -->
+  <div id="wrap">
+    <header id="header">
+      <h1 class="header__logo"><a href="javascript:;"><img src="../assets/img/logo/logo.svg" alt="서울주택도시개발공사"></a></h1>
+    </header>
+
+    <main id="container">
+      <section class="content">
+        <form class="address__form" id="searchForm" action="">
+          <div class="guide__box">
+            안녕하세요! 시설물 유지보수 전문 AI 챗봇입니다.<br>
+            고객님의 편의를 위해 현재 시범서비스를 제공하고 있어요.<br>
+            보다 정확한 안내를 위해 거주 중인 주소를 알려주시면, 주택 유형에 맞춰 맞춤 상담을 도와드릴게요.
+          </div>
+          <div class="search__group address__group is-addr">
+            <div class="address__dropdown-group">
+              <button type="button" class="address__dropdown-btn">주소찾기 
+                <i class="icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M19.7344 8.40847C20.0628 8.70402 20.0894 9.20985 19.7939 9.53827L12.5947 17.5383C12.443 17.7069 12.2268 17.8031 12 17.8031C11.7732 17.8031 11.5571 17.7069 11.4054 17.5383L4.20537 9.5383C3.9098 9.2099 3.93643 8.70406 4.26484 8.4085C4.59324 8.11293 5.09908 8.13955 5.39464 8.46796L12 15.8072L18.6046 8.46799C18.9001 8.13957 19.4059 8.11292 19.7344 8.40847Z" fill="white"/>
+                  </svg>
+                </i>
+              </button>
+              <div class="address__dropdown-box">
+                <ul class="address__dropdown-list">
+                  <li hidden><button type="button" data-mode="addr">주소찾기</button></li>
+                  <li><button type="button" data-mode="complex">단지명</button></li>
+                </ul>
+              </div>
+            </div>
+            <!-- 
+            -  검색이 잘못됐을때, 
+            -  form__row 영역에 "is-error" 추가 
+            -  예시 : <div class="form__row is-error">
+            -->
+            <div class="form__row">
+              <label for="int-search" class="blind">주소찾기</label>
+              <input type="text" class="search__input" id="int-search" placeholder="거주하시는 주소를 입력해 주세요." data-ph-addr="거주하시는 주소를 입력해 주세요." data-ph-complex="거주하신 단지명(아파트/빌라명등)을 입력해 주세요.">
+              <p class="form__message" hidden>입력한 정보를 찾을 수 없습니다. 정확한 정보를 입력해주세요.</p>
+              <div class="search__buttons">
+                <button type="button" class="search__btn search__btn--search">
+                  <i class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                      <path class="path1" d="M19.8754 2.47247L3.26953 8.2337C2.13192 8.62839 2.10073 10.2259 3.22207 10.6647L9.96079 13.3016C10.2974 13.4333 10.5636 13.6995 10.6953 14.0361L13.3322 20.7748C13.771 21.8961 15.3685 21.865 15.7632 20.7273L21.5244 4.12144C21.8792 3.09881 20.8981 2.11768 19.8754 2.47247Z" fill="#FFF"/>
+                      <path class="path2" d="M21.0703 2.92958L10.4063 13.5935M3.271 8.23526L19.8769 2.47403C20.8995 2.11924 21.8807 3.10037 21.5259 4.123L15.7646 20.7289C15.37 21.8665 13.7725 21.8977 13.3337 20.7764L10.6968 14.0376C10.5651 13.7011 10.2988 13.4348 9.96226 13.3031L3.22354 10.6662C2.10219 10.2274 2.13338 8.62994 3.271 8.23526Z" stroke="#8A949E" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </i>
+                  <span class="blind">검색</span>
+                </button>
+              </div>
+            </div>
+            <!-- 주소 상세 -->
+            <div class="address__details">
+              <div class="int__group">
+                <label for="addr_building" class="lbl">동</label>
+                <input type="number" class="int" id="addr_building">
+              </div>
+              <div class="int__group">
+                <label for="addr_number" class="lbl">호</label>
+                <input type="number" class="int" id="addr_number">
+              </div>
+              <div class="int__group">
+                <label for="addr_room" class="lbl">실</label>
+                <input type="number" class="int" id="addr_room">
+              </div>
+              <button type="button" class="btn-submit">확인</button>
+            </div>
+          </div><!-- //address__group -->
+        </form>
+      </section><!-- //main__content -->
+    </main><!-- //container -->
+  </div>
+  <!-- //wrap -->
+  <script type="text/javascript" src="../assets/js/search.js">/* 검색 영역 */</script>
+  <script>
+    /* =========================================
+    * 주소찾기 / 단지명 전용 드롭다운 스크립트
+    *  - 버튼 클릭: 열기/닫기
+    *  - 항목 선택: 버튼 라벨 바꾸고 모드 전환, 상세필드 show/hide
+    *  - 바깥 클릭: 닫기
+    *  - aria-expanded 업데이트
+    * ========================================= */
+    (function () {
+      const $  = (s, r=document) => r.querySelector(s);
+      const $$ = (s, r=document) => Array.from(r.querySelectorAll(s));
+
+      function initAddressSelector() {
+        const group = $('.address__group');
+        if (!group) return;
+
+        const ddGroup  = $('.address__dropdown-group', group);
+        const btn      = $('.address__dropdown-btn', ddGroup);
+        const box      = $('.address__dropdown-box', ddGroup);
+        const list     = $('.address__dropdown-list', ddGroup);
+        const items    = $$('li > button', list);
+        const control  = $('.search__input', group);              // input (또는 textarea도 호환)
+        const label    = $('label[for="int-search"]', group);
+        const details  = $('.address__details', group);
+
+        // 접근성 기본값
+        btn.setAttribute('aria-haspopup', 'listbox');
+        btn.setAttribute('aria-expanded', 'false');
+
+        // 열기/닫기
+        btn.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const open = ddGroup.classList.toggle('is-open');
+          btn.setAttribute('aria-expanded', String(open));
+        });
+
+        // 항목 선택
+        items.forEach((itemBtn) => {
+          itemBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+
+            // li hidden/active 관리
+            const liSelected = itemBtn.closest('li');
+            $$('.address__dropdown-list li', ddGroup).forEach((li) => {
+              li.hidden = false;
+              li.classList.remove('is-active');
+            });
+            liSelected.hidden = true;
+            liSelected.classList.add('is-active');
+
+            // 버튼 라벨 교체 (아이콘 유지)
+            const icon = btn.querySelector('.icon');
+            btn.textContent = itemBtn.textContent + ' ';
+            if (icon) btn.appendChild(icon);
+
+            // 닫기
+            ddGroup.classList.remove('is-open');
+            btn.setAttribute('aria-expanded', 'false');
+
+            // 모드 전환
+            const mode = itemBtn.dataset.mode; // 'addr' | 'complex'
+            if (mode === 'complex') {
+              group.classList.add('is-complex');
+              group.classList.remove('is-addr');
+
+              control.name        = 'q_complex';
+              control.placeholder = control.dataset.phComplex || '단지명을 입력해 주세요.';
+              if (label) label.textContent = '단지명';
+              if (details) details.hidden = true;  // 단지명은 상세주소 숨김
+            } else {
+              group.classList.add('is-addr');
+              group.classList.remove('is-complex');
+
+              control.name        = 'q_address';
+              control.placeholder = control.dataset.phAddr || '주소를 입력해 주세요.';
+              if (label) label.textContent = '주소찾기';
+              if (details) details.hidden = false; // 주소찾기는 상세주소 노출
+            }
+
+            // textarea 자동높이 대상이면 placeholder 변경 후 보정
+            if (control.matches('textarea.search__input[data-autosize]') && window.autosizeOneTextarea) {
+              requestAnimationFrame(() => window.autosizeOneTextarea(control));
+            }
+          });
+        });
+
+        // 바깥 클릭 닫기 (이 컴포넌트만)
+        document.addEventListener('click', (e) => {
+          if (!ddGroup.classList.contains('is-open')) return;
+          if (!ddGroup.contains(e.target)) {
+            ddGroup.classList.remove('is-open');
+            btn.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+
+      // 초기화
+      document.addEventListener('DOMContentLoaded', initAddressSelector);
+    })();
+  </script>
+</body>
+</html>

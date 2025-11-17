@@ -173,14 +173,19 @@ input.search__input {padding-top:0px;padding-bottom:0px;}
 .chat__messages {display:grid;row-gap:16px;}
 .chat__bubble {display:flex;} 
 .chat__bubble.is-me {justify-content:flex-end;padding-right:14px;}
+.chat__message {display:inline-flex;align-items:flex-end;column-gap:8px;}
+.message__time {font-size:13px;color:#5D5D5D;}
 .chat__message .message__inner {position:relative;padding:24px;font-weight:600;font-size:var(--font-size-md);color:var(--color-desc);line-height:150%;}
 .message__inner > .chat-guide:first-child {border-top:none;} 
 .message__inner b {font-weight:600;color:var(--color-balck);}
 .chat__bubble.is-you .chat__messages {max-width:737px;}
 .chat__bubble.is-you .message__inner {background-color:#DEF0D6;border-radius:0 16px 16px 16px;color:var(--color-title);}
+.chat__bubble.is-you .chat__message {position:relative;padding-left:52px;}
+.chat__bubble.is-you .chat__message .message__photo {position:absolute;top:0;left:0;}
 .chat__bubble.is-me .chat__messages {max-width:747px;}
-.chat__bubble.is-me .message__inner {background-color:#ECECEC;border-radius:16px;}
+.chat__bubble.is-me .message__inner {order:2;background-color:#ECECEC;border-radius:16px;}
 .chat__bubble.is-me .message__inner::before {content:'';position:absolute;top:25%;right:0;width:24px;height:24px;margin-right:-14px;background-repeat:no-repeat;background-position:center;background-size:100%;background-image:url(../img/icon/ico_form.svg);}
+.chat__bubble.is-me .chat__message .message__time {order:1 !important;}
 /* 결과 마지막 */
 .chat__message.last .message__inner {padding:0px;}
 .chat__message.last .message__inner > * {padding:24px;}
@@ -219,7 +224,7 @@ input.search__input {padding-top:0px;padding-bottom:0px;}
 }
 
 /* 복사/좋아요/싫어요 버튼 */
-.chat__actions {display:flex;align-items:flex-start;column-gap:8px;margin-top:16px;}
+.chat__actions {display:flex;align-items:flex-start;column-gap:8px;padding-left:52px;}
 .btn-action {display:grid;position:relative;}
 .btn-action::before {content:'';display:flex;align-items:center;justify-content:center;width:32px;height:32px;background-color:var(--color-white);background-repeat:no-repeat;background-position:center;background-size:20px;border-radius:8px;transition:all .2s;-webkit-transition:all .2s;}
 .btn-action.btn-action--copy::before {background-image:url(../img/icon/ico_copy.svg);}

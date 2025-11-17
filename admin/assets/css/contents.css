@@ -13,11 +13,10 @@
 .board-wrap {display:grid;row-gap:15px;}
 .board-head {display:flex;align-items:flex-end;justify-content:space-between;}
 .board-title {font-weight:700;font-size:19px;color:#333;}
-.btn-home {display:flex;align-items:center;justify-content:center;column-gap:4px;height:35px;padding:0px 18px;background-color:#EFF7EA;border-radius:50px;border:1px solid #5BB431;font-weight:800;font-size:14px;color:#5BB431;box-sizing:border-box;cursor:pointer;transition:all .3s ease-in-out;}
-.btn-home::before {content:none;display:flex;align-items:center;}
-.btn-home:hover {background-color:#E3EBDE;}
-.btn-home:active {background-color:#CEE9C1;border-color:#CEE9C1;}
-
+.board-actions {display:flex;column-gap:8px;}
+.btn-default {display:flex;align-items:center;justify-content:center;column-gap:4px;height:35px;padding:0px 18px;background-color:#FFF;border-radius:3px;border:1px solid #aaa;font-weight:600;font-size:14px;color:#333;box-sizing:border-box;cursor:pointer;transition:all .3s ease-in-out;}
+.btn-default::before {content:none;display:flex;align-items:center;}
+.btn-default:hover {border-color:#000;}
 
 .board-body {display:grid;row-gap:20px;}
 .board-table-area {border-top:1px solid #ddd;}

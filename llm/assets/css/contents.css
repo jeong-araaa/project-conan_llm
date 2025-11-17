@@ -176,7 +176,7 @@ input.search__input {padding-top:0px;padding-bottom:0px;}
 .chat__message .message__inner {position:relative;padding:24px;font-weight:600;font-size:var(--font-size-md);color:var(--color-desc);line-height:150%;}
 .message__inner > .chat-guide:first-child {border-top:none;} 
 .message__inner b {font-weight:600;color:var(--color-balck);}
-.chat__bubble.is-you .chat__messages {min-width:737px;max-width:737px;}
+.chat__bubble.is-you .chat__messages {max-width:737px;}
 .chat__bubble.is-you .message__inner {background-color:#DEF0D6;border-radius:0 16px 16px 16px;color:var(--color-title);}
 .chat__bubble.is-me .chat__messages {max-width:747px;}
 .chat__bubble.is-me .message__inner {background-color:#ECECEC;border-radius:16px;}

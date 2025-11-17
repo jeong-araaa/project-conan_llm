@@ -181,7 +181,8 @@ input.search__input {padding-top:0px;padding-bottom:0px;}
 .chat__bubble.is-you .chat__messages {max-width:737px;}
 .chat__bubble.is-you .message__inner {background-color:#DEF0D6;border-radius:0 16px 16px 16px;color:var(--color-title);}
 .chat__bubble.is-you .chat__message {position:relative;padding-left:52px;}
-.chat__bubble.is-you .chat__message .message__photo {position:absolute;top:0;left:0;}
+.chat__bubble.is-you .chat__message .message__photo {position:absolute;top:0;left:0;width:48px;height:48px;}
+.chat__bubble.is-you .chat__message .message__photo img {width:100%;height:100%;}
 .chat__bubble.is-me .chat__messages {max-width:747px;}
 .chat__bubble.is-me .message__inner {order:2;background-color:#ECECEC;border-radius:16px;}
 .chat__bubble.is-me .message__inner::before {content:'';position:absolute;top:25%;right:0;width:24px;height:24px;margin-right:-14px;background-repeat:no-repeat;background-position:center;background-size:100%;background-image:url(../img/icon/ico_form.svg);}
@@ -202,6 +203,9 @@ input.search__input {padding-top:0px;padding-bottom:0px;}
   .chat__bubble.is-me {padding-right:1rem;}
   .chat__bubble.is-me .message__inner::before {width:1.6rem;height:1.6rem;margin-right:-1rem;}
   .chat__message.last .message__inner > * {padding:1.6rem;}
+  .chat__bubble.is-you .chat__message {padding-left:5.2rem;}
+  .chat__bubble.is-you .chat__message .message__photo {width:4.8rem;height:4.8rem;}
+  .message__time {font-size:1.3rem}
 }
 @media screen and (max-width:480px) {
   .chat__bubble .message__inner {padding:0.8rem 1.6rem;}

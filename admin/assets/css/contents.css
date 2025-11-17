@@ -1,0 +1,26 @@
+@charset "UTF-8";
+/**
+ * Jeong A Ra CSS
+ * http://jeongara.com/
+ *
+ * Contents CSS
+ */
+
+/* ================================
+  컨텐츠
+================================= */
+#container {max-width:1200px;margin:0 auto;padding:70px 0px;}
+.board-wrap {display:grid;row-gap:15px;}
+.board-head {display:flex;align-items:flex-end;justify-content:space-between;}
+.board-title {font-weight:700;font-size:19px;color:#333;}
+.btn-home {display:flex;align-items:center;justify-content:center;column-gap:4px;height:35px;padding:0px 18px;background-color:#EFF7EA;border-radius:50px;border:1px solid #5BB431;font-weight:800;font-size:14px;color:#5BB431;box-sizing:border-box;cursor:pointer;transition:all .3s ease-in-out;}
+.btn-home::before {content:none;display:flex;align-items:center;}
+.btn-home:hover {background-color:#E3EBDE;}
+.btn-home:active {background-color:#CEE9C1;border-color:#CEE9C1;}
+
+
+.board-body {display:grid;row-gap:20px;}
+.board-table-area {border-top:1px solid #ddd;}
+.board-button-area {display:flex;justify-content:end;margin-top:10px;}
+.btn {display:grid;align-items:center;justify-content:center;height:40px;padding:0px 18px;background-color:#555;border:none;border-radius:3px;font-weight:600;font-size:14px;color:#FFF;cursor:pointer;transition:all .3s ease-in-out;}
+.btn:hover {background-color:#484848;}

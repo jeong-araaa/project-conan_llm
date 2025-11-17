@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/**
+ * Jeong A Ra CSS
+ * http://jeongara.com/
+ *
+ * Default CSS
+ */
+@import url(font.css);
+@import url(reset.css);
+
+/*** 컨텐츠 ***/
+@import url(contents.css);

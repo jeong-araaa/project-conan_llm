@@ -248,5 +248,28 @@ input.search__input {padding-top:0px;padding-bottom:0px;}
   .btn-action::before {width:24px;height:24px;background-size:18px;}
   .btn-action .btn-text {top:2.9rem;padding:0.3rem 0.4rem;}
 }
-@media screen and (max-width:480px) {
+
+/* 챗 로딩 */
+.message__loading {display:flex;align-items:end;column-gap:7px;}
+.thinking {display:flex;align-items:center;column-gap:8px;margin-bottom:3px;}
+.thinking .dot {width:10px;height:10px;border-radius:50%;background-color:#DBDBDB;animation:bounce 1s infinite ease-in-out;}
+.thinking .dot:nth-child(1) {animation-delay:0s;}
+.thinking .dot:nth-child(2) {animation-delay:0.3s;}
+.thinking .dot:nth-child(3) {animation-delay:0.6s;}
+@keyframes bounce {
+  0% {transform:translateY(0);background-color:#DBDBDB;}
+  35% {transform:translateY(-10px);background-color:var(--color-primary);}
+  70% {transform:translateY(0);background-color:#a4d89c;}
+  100% {transform:translateY(0);background-color:#DBDBDB;}
+}
+@media screen and (max-width:767px) {
+  .message__loading {column-gap:0.7rem;}
+  .thinking {column-gap:0.8rem;margin-bottom:0.3rem;}
+  .thinking .dot {width:1rem;height:1rem;}
+  @keyframes bounce {
+    0% {transform:translateY(0);background-color:#DBDBDB;}
+    35% {transform:translateY(-1rem);background-color:var(--color-primary);}
+    70% {transform:translateY(0);background-color:#a4d89c;}
+    100% {transform:translateY(0);background-color:#DBDBDB;}
+  }
 }

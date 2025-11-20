@@ -213,6 +213,16 @@ input.search__input {padding-top:0px;padding-bottom:0px;}
   .chat__message.last .message__inner > * {padding:0.8rem 1.6rem;}
 }
 
+.chat__buttons {display:flex;align-items:center;column-gap:8px;margin-top:-8px;margin-left:55px;}
+.btn-address {display:grid;align-items:center;height:31px;padding:0px 24px;background-color:var(--color-desc);border-radius:4px;font-weight:600;font-size:15px;color:#FFF;}
+.btn-address.is-yes {background-color:var(--color-primary);}
+.btn-address.is-yes:disabled {background-color:var(--color-placeholder);}
+.btn-address.is-yes:hover:not(:disabled) {background-color:var(--color-primary-hover);}
+.btn-address.is-yes:active:not(:disabled) {background-color:var(--color-primary-active);}
+.btn-address.is-no:disabled {background-color:var(--color-placeholder);}
+.btn-address.is-no:hover:not(:disabled) {background-color:#333;}
+.btn-address.is-no:active:not(:disabled) {background-color:#222;}
+
 /* 가이드 */
 .chat-guide {border-top:1px solid #499027;font-weight:400;font-size:var(--font-size-md);line-height:150%;}
 .chat-guide h3 {font-weight:700;font-size:var(--font-size-md);color:var(--color-desc);}

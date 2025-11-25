@@ -16,6 +16,8 @@
 
 /* 검색 폼 */
 .search__input {width:100%;height:var(--size-h);padding-left:24px;padding-right:90px;padding-top:20px;padding-bottom:20px;border-radius:8px;border:1px solid var(--color-int-line);font-size:19px;color:var(--color-title);line-height:150%;resize:none;box-sizing:border-box;}
+.search__input::placeholder {color:var(--color-int-placeholder);}
+.search__input:focus {border-color:var(--color-title);}
 input.search__input {padding-top:0px;padding-bottom:0px;}
 .search__buttons {display:flex;align-items:center;position:absolute;top:0px;right:0px;height:100%;}
 .search__btn {display:flex;align-items:center;}

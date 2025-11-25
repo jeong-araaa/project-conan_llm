@@ -18,7 +18,8 @@
     --color-desc: #3D3D3D;
     --color-text: #7D7D7D;
     /* form */
-    --color-int-line: #58616A;
+    --color-int-line: #CDD1D5;
+    --color-int-placeholder: #ABB0B9;
     --color-focus: #444;
     --color-placeholder: #8A949E;
     /* background */

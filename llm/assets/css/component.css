@@ -93,7 +93,7 @@ br.mo-block {display:none;}
 
 /* 토글 스위치 */
 .toggle {position:absolute;top:33px;right:60px;display:inline-flex;align-items:center;cursor:pointer;gap:8px;}
-.toggle__label {font-size:var(--font-size);color:#1E2124;}
+.toggle__label {display:block;width:60px;font-size:var(--font-size);color:#1E2124;}
 .toggle__label .toggle__label--off {display:block;}
 .toggle__label .toggle__label--on {display:none;}
 .toggle__input {position:absolute;opacity:0;width:0;height:0;}
@@ -121,6 +121,7 @@ br.mo-block {display:none;}
 @media screen and (max-width:1024px) {
   .toggle {gap:0.4rem;}
   .toggle__label {font-size:1.5rem;}
+  .toggle__label {width:5rem;}
 }
 
 

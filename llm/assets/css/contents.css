@@ -195,8 +195,8 @@ input.search__input {padding-top:0px;padding-bottom:0px;}
 @media screen and (max-width:1024px) {
 }
 @media screen and (max-width:1023px) {
-.chat__bubble.is-you .chat__messages {min-width:85%;max-width:85%;}
-.chat__bubble.is-me .chat__messages {max-width:85%;}
+.chat__bubble.is-you .chat__messages {min-width:95%;max-width:95%;}
+.chat__bubble.is-me .chat__messages {max-width:95%;}
 }
 @media screen and (max-width:767px) {
   .chat {row-gap:3rem;}
@@ -208,11 +208,16 @@ input.search__input {padding-top:0px;padding-bottom:0px;}
   .chat__bubble.is-you .chat__message {padding-left:5.2rem;}
   .chat__bubble.is-you .chat__message .message__photo {width:4.8rem;height:4.8rem;}
   .message__time {font-size:1.3rem}
+  .chat__bubble.is-you .chat__messages {min-width:100%;max-width:100%;}
+  .chat__bubble.is-me .chat__messages {max-width:100%;}
+  .chat__bubble.is-me .chat__message {justify-content:flex-end;}
 }
 @media screen and (max-width:480px) {
   .chat__bubble .message__inner {padding:0.8rem 1.6rem;}
   .chat__bubble.is-me .message__inner::before {width:1.2rem;height:1.2rem;margin-right:-0.7rem;}
   .chat__message.last .message__inner > * {padding:0.8rem 1.6rem;}
+}
+@media screen and (max-width:390px) {
 }
 
 .chat__buttons {display:flex;align-items:center;column-gap:8px;margin-top:-8px;margin-left:55px;}
@@ -224,6 +229,16 @@ input.search__input {padding-top:0px;padding-bottom:0px;}
 .btn-address.is-no:disabled {background-color:var(--color-placeholder);}
 .btn-address.is-no:hover:not(:disabled) {background-color:#333;}
 .btn-address.is-no:active:not(:disabled) {background-color:#222;}
+@media screen and (max-width:767px) {
+  .chat__buttons {margin-top:0px;margin-left:5.2rem;}
+  .btn-address {max-width:fit-content;padding:0px 1.6rem;font-size:1.4rem;}
+}
+@media screen and (max-width:510px) {
+  .chat__buttons {display:grid;row-gap:0.8rem;}
+}
+@media screen and (max-width:390px) {
+  .btn-address {}
+}
 
 /* 가이드 */
 .chat-guide {border-top:1px solid #499027;font-weight:400;font-size:var(--font-size-md);line-height:150%;}

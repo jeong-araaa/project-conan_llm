@@ -16,6 +16,10 @@
 @media screen and (max-width:1200px) {
   #header {position:fixed;justify-content:center;padding:0px 20px}
 }
+@media screen and (max-width:480px) {
+  #header {justify-content:flex-start;}
+  .header__logo img {height:25px;}
+}
 
 
 
